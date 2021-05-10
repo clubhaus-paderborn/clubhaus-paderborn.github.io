@@ -1,0 +1,15 @@
+# Site settings
+head_title: Clubhaus Paderborn
+title: Clubhaus Paderborn
+description: Veranstaltungsort mit Biergarten und vielem mehr!
+keywords: "Biergarten, Tennisclub, Tennis, TC Grün-Weiß, Paderborn, Essen, Pommes, Eis, Bier"
+owner: RMV-PB GmbH # or company name
+address: Fürstenweg 19, 33102 Paderborn
+first_published: 2021 # if migrating another site, the year of your first publish
+email: info@clubhaus-paderborn.de
+baseurl: "" # the subpath of your site, e.g. /blog
+url: https://www.clubhaus-paderborn.de # the base hostname & protocol for your site
+
+
+# Build settings
+markdown: kramdown
