@@ -12,11 +12,13 @@ layout: default
         </header>
         <p>Sie suchen nach einer Eventlocation für Ihren runden Geburtstag, Ihre Hochzeit oder haben einen anderen, ganz
             besonderen Anlass? Dann sind Sie hier richtig!
-</p><p>
+        </p>
+        <p>
             Sobald es die Situation mit der Corona-Pandemie zulässt und es absehbar ist, dass Veranstaltungen mit einer
             höheren Personenanzahl wieder erlaubt sind, finden Sie hier einen Buchungskalender und viele weitere
             Informationen, um Ihre perfekte Party zu planen.
-    </p><p>
+        </p>
+        <p>
             Nichtsdestotrotz besteht die Möglichkeit, uns auch vorher schon einen Besuch abzustatten. Aktuell bieten wir
             ein coronakonformes To Go-Geschäft mit leckerem Eis, frischem Kaffee und Kuchen sowie verschiedenen
             alkoholischen Getränken und Softdrinks an. Auch die eine oder andere herzhafte Mahlzeit können Sie sich beim
@@ -26,23 +28,143 @@ layout: default
 </section>
 
 <!-- Two -->
-<!--
+
 <section id="two">
     <div class="container">
-        <h3>Things I Can Do</h3>
-        <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing
-            cubilia elementum integer lorem ipsum dolor sit amet.</p>
-        <ul class="feature-icons">
-            <li class="fa-code">Write all the code</li>
-            <li class="fa-cubes">Stack small boxes</li>
-            <li class="fa-book">Read books and stuff</li>
-            <li class="fa-coffee">Drink much coffee</li>
-            <li class="fa-bolt">Lightning bolt</li>
-            <li class="fa-users">Shadow clone technique</li>
+        <header class="major">
+            <h2>Eventlocation buchen</h2>
+            <p>
+                Stelle ganz einfach eine Anfrage über den Buchungskalender. Wir melden uns anschließend bei dir!
+            </p>
+
+            <div style="text-align: left;">
+                <h4>
+                    Schritte zur Buchung
+                </h4>
+                <div>
+                    1) Wähle den gewünschten Termin für deine Veranstaltung
+                </div>
+                <div>
+                    2) Fülle die Eckdaten deiner Veranstaltung aus
+                </div>
+                <div>
+                    3) Vervollständige die Buchung durch deine persönlichen Daten!
+                </div>
+            </div>
+        </header>
+        <div>
+            <form method="post" action="#" id="booking-form">
+                <div class="litepicker-wrapper">
+                    Tag der Veranstaltung
+                    <input type="text" id="litepicker" autocomplete="off" required onkeypress="return false;"
+                           placeholder="Tag im Kalender auswählen"></div>
+                <div class="row uniform">
+                    <div class="6u 12u$(small)">
+                        <select name="guests" id="guests">
+                            <option value="">Anzahl Gäste</option>
+                            <option value="0-40">unter 40</option>
+                            <option value="41-50">41-50</option>
+                            <option value="51-60">51-60</option>
+                            <option value="61-80">61-80</option>
+                            <option value="81-100">81-100</option>
+                            <option value="100+">über 100</option>
+                        </select>
+                    </div>
+                    <div class="12u$ 12u$(xsmall)">
+                        <input type="checkbox" id="dj" name="dj" value="true">
+                        <label for="dj">
+                            Ich möchte einen DJ
+                        </label>
+                    </div>
+                    <div class="12u$ 12u$(xsmall)">
+                        <input type="checkbox" id="catering" name="catering" value="true">
+                        <label for="catering">
+                            Ich möchte meinen Gästen Catering anbieten
+                        </label>
+                    </div>
+                    <div class="12u$ 12u$(xsmall)">
+                        <textarea type="text" name="further-info" required id="further-info"
+                                  placeholder="Weitere Angaben" rows="6"></textarea>
+                    </div>
+                    <div class="12u$ 12u$(xsmall)">
+                        <input autocomplete="name" type="text" name="name" id="name" required placeholder="Name"/>
+                    </div>
+
+                    <div class="12u$ 12u$(xsmall)">
+                        <input type="text" autocomplete="street-address" name="street" required id="street"
+                               placeholder="Straße und Hausnummer"/>
+                    </div>
+
+                    <div class="6u 12u$(xsmall)">
+                        <input type="text" autocomplete="postal-code" name="zip" id="zip" required placeholder="PLZ"/>
+                    </div>
+                    <div class="6u 12u$(xsmall)">
+                        <input type="text" autocomplete="address-level2" name="city" id="city" required
+                               placeholder="Stadt"/>
+                    </div>
+                    <div class="6u 12u$(xsmall)">
+                        <input type="text" inputmode="tel" autocomplete="tel" name="telephone" required id="telephone"
+                               placeholder="Telefon"/>
+                    </div>
+                    <div class="6u 12u$(xsmall)">
+                        <input type="email" autocomplete="email" name="email" id="email" required placeholder="E-Mail"/>
+                    </div>
+
+                    <div class="12u 12u$(small)">
+                        <input type="checkbox" id="dsgvo" name="dsgvo" required value="true">
+                        <label for="dsgvo">Ich akzeptiere, dass meine persönlichen Daten zur Bearbeitung der Anfrage von
+                            uns und unseren Dienstleistern elektronisch verarbeitet werden. </label>
+                    </div>
+                <!--    <div class="12u 12u$(small)">
+                        <input type="checkbox" id="storno" name="storno" required value="true" >
+                        <label for="storno">
+                            Ich nehme zur Kenntnis, dass das Stornieren einer Buchung nur bis zu 10 Tage
+                            vor dem gewählten Termin gebührenfrei möglich ist. Die Gebühren für eine Stornierung bis
+                            zu vier Tage vor dem Termin belaufen sich auf 50%, kurzfristigere Stornierungen auf 100%
+                            des Buchungspreises (exkl. Lieferkosten).
+                        </label>
+                    </div>
+                    -->
+                    <!--  <div class="6u 12u$(small)">
+                          <input type="checkbox" id="human" name="human" checked>
+                          <label for="human"></label>
+                      </div>
+
+                      <div class="12u$">
+                          <textarea name="demo-message" id="demo-message" placeholder="Enter your message"
+                                    rows="6"></textarea>
+                      </div>
+                      -->
+                    <div class="12u$">
+                        <ul class="actions">
+                            <li>
+                                <input type="submit" class="primary">
+                            </li>
+                            <li>
+                                <input type="reset">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+        <ul class="features">
+            <li style="width: 100%;" id="form-success" class="icon fa-calendar-check-o">
+                <p>
+                    Die Anfrage wurde erfolgreich abgesendet! Eine Kopie wurde per Mail zugesandt und wir melden uns bei
+                    dir um letzte Details zu klären.
+                </p>
+            </li>
+            <li style="width: 100%;" id="form-error" class="icon fa-calendar-times-o">
+                <p>
+                    Die Anfrage hat leider nicht geklappt. Für das gewählte Datum existiert bereits eine Anfrage.
+                </p>
+            </li>
         </ul>
     </div>
 </section>
--->
+
 <!-- Three -->
 <!--
 <section id="three">
